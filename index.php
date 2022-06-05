@@ -36,17 +36,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/vue3-carousel@0.1.40/dist/carousel.css" rel="stylesheet">
 
+  <!-- Jquery-->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
   <!-- vuejs -->
-  <script src="assets/vendor/vuejs/vue.global.js"></script>
-  <script type="importmap">
-    {
-      "imports": {
-        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js",
-        "@chenfengyuan/vue-carousel": "https://unpkg.com/@chenfengyuan/vue-carousel@2.0.0/dist/vue-carousel.esm.min.js"
-      }
-    }
-  </script>
+  <script src="assets/vendor//vuejs/vue.global.js"></script>
+  <script src="assets/vendor/vuejs/carousel.js"></script>
+  <!-- "@chenfengyuan/vue-carousel": "http://localhost/tech-vendas/assets/vendor/vuejs/vue-carousel.esm.min.js", -->
 
   <title>Tech Vendas</title>
 </head>
@@ -113,13 +110,84 @@
     <!-- Navbar -->
 
     <!-- Interna -->
-    <div class="bgBanner">
+    <section class="bgBanner">
       <div class="container">
         <div class="blc_banner">
-          <vue-carousel :controls="true" :data="banners"></vue-carousel>
+          <Carousel :autoplay="7000" :wrap-around="true">
+            <Slide v-for="banner in banners" :key="slide">
+              <div class="item">
+                <div class="row d-flex align-items-center ">
+                    <div class="col-12 col-lg-6">
+                        <div class="dv1">
+                            <span v-if="banner.discount" class="dv2">
+                                {{banner.discount}}
+                            </span>
+                            <h2>
+                                {{banner.title}}
+                            </h2>
+                            <p class="p1">
+                              {{banner.description}}
+                            </p>
+                            <div class="blc_preco d-flex">
+                                <del v-if="banner.price_regular" class="preco_regular d-flex align-items-center">
+                                    <span>R$</span> {{banner.price_regular}}
+                                </del>
+                                <ins v-if="banner.price_discount" class="preco_promocao d-flex align-items-start">
+                                    <span>R$</span> {{banner.price_discount}}
+                                </ins>
+                                <ins v-if="!banner.price_discount" class="preco_promocao d-flex align-items-start">
+                                    <span>R$</span> {{banner.price_discount}}
+                                </ins>
+                            </div>
+                            <a :target="banner.target" v-if="banner.url" :href="banner.url" class="btn d-flex align-items-center justify-content-between btn-primary bt_banner_Saiba_mais">
+                                VER MAIS DETALHES <i class="fal fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img alt="" class="img-fluid" :src="banner.photo"/>
+                    </div>
+                </div>
+              </div>
+            </Slide>
+            <template #addons>
+              <Navigation />
+            </template>
+          </Carousel>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="produtoDestak">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <h2 class="dv1">
+              Produtos em destaque
+            </h2>
+            <div class="dv2">
+              <a href="#">
+                <img src="assets/images/left-carrousel.svg" alt="" />
+              </a>
+              <a class="dv3" href="#">
+                <img src="assets/images/right-carrousel.svg" alt="" />
+              </a>
+            </div>
+            <div class="dv4">
+              <a href="" class="btn d-flex align-items-center justify-content-between btn-primary bt_green_1">
+                VER TODOS <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9">
+            <carousel ref="produtos_detaque" :settings='settings_produtos_destaque'>
+              <slide v-for="slide in 10" :key="slide">
+                <div class="carousel__item">{{ slide }}</div>
+              </slide>
+            </carousel>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="container">
@@ -255,8 +323,6 @@
       </div>
     </div>
   </div>
-  <!-- Jquery-->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- Uteis-->
   <script src="assets/vendor/formulario/formulario.js"></script>

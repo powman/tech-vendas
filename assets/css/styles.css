@@ -25,11 +25,17 @@
 .btn-header-contato i{color: var(--green); font-size: 20px;}
 .btn-header-contato:hover{background-color: var(--green-light);}
 .btn-header-contato:hover i{color: var(--black); }
+.bt_green_1{margin-top: 32px; max-width: 279px; padding:9px 20px; background: #A1E498;border-color:#A1E498;border-radius: 8.75px; font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;line-height: 33px;text-align: center;letter-spacing: 0.2em;color: #1E1E1E;}
+.bt_green_1 i{font-size: 28px;}
+.bt_green_1:hover{background-color: #fff; color: var(--black);}
+.bt_green_1:hover i{color: var(--black); }
+
+.component_produto{background: #FFFFFF;box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);border-radius: 30px;padding:12px;}
 
 
 .bgBanner{background:url(../images/bg_banner.png) no-repeat center center; min-height: 600px; background-size: 100% 100%;}
 .blc_banner{min-height: 600px; position: relative;}
-.blc_banner .dv1{max-width: 481px; margin: 0 auto;}
+.blc_banner .dv1{max-width: 481px; margin: 0 auto; text-align: left;}
 .blc_banner .dv2{background: #FFE921;border-radius: 5px; display: inline-block; padding:5px 7px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 10px;line-height: 19px;text-align: center;color: #1E1E1E;}
 .blc_banner .dv1 h2{font-family: 'Inter'; margin-top: 8px; margin-bottom: 0px; font-style: normal;font-weight: 500;font-size: 35px;line-height: 38px;letter-spacing: 0.02em;color: #1E1E1E;}
 .blc_banner .dv1 .p1{font-family: 'Inter'; margin-bottom: 16px; font-style: normal;font-weight: 300;font-size: 20px;line-height: 38px;letter-spacing: 0.02em;color: #444444;}
@@ -48,6 +54,34 @@
 .blc_banner .bt_banner_Saiba_mais i{font-size: 28px;}
 .blc_banner .bt_banner_Saiba_mais:hover{background-color: transparent;}
 .blc_banner .bt_banner_Saiba_mais:hover i{color: var(--black); }
+.blc_banner .vue-carousel__control--next{right: 0px;}
+.blc_banner .vue-carousel__control--prev{left: 0px;}
+.blc_banner .carousel__prev{left: 15px;}
+.blc_banner .carousel__next{right: 15px;}
+
+
+.produtoDestak{background-color: #1E1E1E; padding: 87px 0px;}
+.produtoDestak .dv1{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 35px;line-height: 38px;letter-spacing: 0.02em;color: #FFFFFF;margin-bottom: 0px;}
+.produtoDestak .dv2{margin-top: 29px;}
+.produtoDestak .dv3{margin-left: 11px;}
+.produtoDestak .dv4{margin-top: 54px;}
+
+
+.produtoDestak .carousel__item {
+	min-height: 200px;
+	width: 100%;
+	background-color: #642afb;
+	color: white;
+	font-size: 20px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.produtoDestak .carousel__slide {
+	padding: 10px;
+}
+
 
 footer{padding:100px 0px;}
 footer ul li{font-family: Titillium Web;font-style: normal;font-weight: 600;font-size: 24px;line-height: 37px;color: #33333C; margin-bottom: 30px;}
