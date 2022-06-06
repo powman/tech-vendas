@@ -17,6 +17,9 @@
   outline: 0 !important;
   transition: all 0.35s ease-in-out;
 }
+body, html{
+  background-color: #F5F5F5;
+}
 .navbar{background: rgba(255, 255, 255, 1); min-height: 80px;}
 .navbar-expand-lg .btn-link{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14.0742px;line-height: 23px;letter-spacing: 0.05em;text-transform: uppercase;color: #1E1E1E;text-decoration: none; padding:0px 15px}
 .navbar-expand-lg .btn-link i{color: var(--green); font-size: 20px; margin-right: 11px;}
@@ -29,12 +32,32 @@
 .bt_green_1 i{font-size: 28px;}
 .bt_green_1:hover{background-color: #fff; color: var(--black);}
 .bt_green_1:hover i{color: var(--black); }
+.bt_green_2{margin-top: 32px; max-width: 342px; width: 100%; padding:9px 20px; background: var(--black);border-color:var(--black);border-radius: 8.75px; font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;line-height: 33px;text-align: center;letter-spacing: 0.2em;color: #A1E498;}
+.bt_green_2 i{font-size: 28px;}
+.bt_green_2:hover{background-color: #fff; color: var(--black);}
+.bt_green_2:hover i{color: var(--black); }
+.bt_green_3{max-width: 279px; width: 100%; padding:9px 20px; background: #fff;border-color:#fff;border-radius: 8.75px; font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;line-height: 33px;text-align: center;letter-spacing: 0.2em;color: var(--black);}
+.bt_green_3 i{font-size: 28px;}
+.bt_green_3:hover{background-color: var(--black); color: #fff;border-color: var(--black);}
+.bt_green_3:hover i{color: #fff; }
 
-.component_produto{background: #FFFFFF;box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);border-radius: 30px;padding:12px;}
-
+.component_produto{background: #FFFFFF;box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);border-radius: 30px;padding:12px;width:100%;padding-bottom: 25px;}
+.component_produto .img{width: 100%; display: block; height: 200px; object-fit: cover; border-radius: 20px;background-blend-mode: multiply, normal; background-size: cover !important;background-position: center center !important; background-repeat: no-repeat !important;} 
+.component_produto .dc0{padding:0px 13px;}
+.component_produto .dc11{font-family: 'Inter' !important; text-align: justify; font-style: normal !important;font-weight: 600 !important;font-size: 20px !important;line-height: 130% !important;letter-spacing: 0.02em;color: #1E1E1E !important;margin-bottom: 0px; text-align: justify;margin-top: 23px;margin-bottom: 20px;}
+.component_produto .dc22{font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 18px;line-height: 130%;letter-spacing: 0.02em;color: #444444; text-align: left;}
+.component_produto del{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 18.7945px;line-height: 25px;letter-spacing: 0.02em;color: #868686;text-decoration: none;opacity: 1;}
+.component_produto del span{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 10.0685px;line-height: 16px;letter-spacing: 0.02em;font-feature-settings: 'tnum' on, 'lnum' on;color: #868686;margin-right: 3px;}
+.component_produto del{position: relative;}
+.component_produto del::after{content: ""; position: absolute; left: 0px; top: 50%; right: 0px; height: 2px; background-color: red; transform: rotate(4.49deg);}
+.component_produto ins{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 28px;line-height: 38px;letter-spacing: 0.02em;color: #1E1E1E;text-decoration: none;}
+.component_produto ins span{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 15px;line-height: 28px;letter-spacing: 0.02em;font-feature-settings: 'tnum' on, 'lnum' on;color: #1E1E1E;margin-right: 3px;}
+.component_produto .dc23{margin-top: 23px;}
+.component_produto .bt_green_1{padding:4px 20px;margin-top: 0px;}
 
 .bgBanner{background:url(../images/bg_banner.png) no-repeat center center; min-height: 600px; background-size: 100% 100%;}
 .blc_banner{min-height: 600px; position: relative;}
+.blc_banner .carousel, .blc_banner .carousel__viewport, .blc_banner .carousel__track{min-height: 600px;}
 .blc_banner .dv1{max-width: 481px; margin: 0 auto; text-align: left;}
 .blc_banner .dv2{background: #FFE921;border-radius: 5px; display: inline-block; padding:5px 7px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 10px;line-height: 19px;text-align: center;color: #1E1E1E;}
 .blc_banner .dv1 h2{font-family: 'Inter'; margin-top: 8px; margin-bottom: 0px; font-style: normal;font-weight: 500;font-size: 35px;line-height: 38px;letter-spacing: 0.02em;color: #1E1E1E;}
@@ -58,6 +81,8 @@
 .blc_banner .vue-carousel__control--prev{left: 0px;}
 .blc_banner .carousel__prev{left: 15px;}
 .blc_banner .carousel__next{right: 15px;}
+.blc_banner .carousel__prev, .blc_banner .carousel__next{background-color: transparent; border: 2px solid #444444; color:#444444;}
+.blc_banner .carousel .item{width: 100%;}
 
 
 .produtoDestak{background-color: #1E1E1E; padding: 87px 0px;}
@@ -65,32 +90,54 @@
 .produtoDestak .dv2{margin-top: 29px;}
 .produtoDestak .dv3{margin-left: 11px;}
 .produtoDestak .dv4{margin-top: 54px;}
+.produtoDestak .blc-carrousel-destaque{margin-bottom: -180px;}
+.produtoDestak .carousel__item {min-height: 200px;width: 100%;display: flex;justify-content: center;align-items: center;}
+.produtoDestak .carousel__slide {padding: 10px;}
 
 
-.produtoDestak .carousel__item {
-	min-height: 200px;
-	width: 100%;
-	background-color: #642afb;
-	color: white;
-	font-size: 20px;
-	border-radius: 8px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.produtoDestak .carousel__slide {
-	padding: 10px;
-}
+.todos_os_produtos{background-color: #fff; padding: 187px 0px 0px 0px;}
+.todos_os_produtos .dv1{padding: 100px 0px; background-color: #F5F5F5;}
+.todos_os_produtos .search{margin-bottom: 40px;}
+.todos_os_produtos .search input{background: #FFFFFF; border:0px;border-radius: 8.75px 0px 0px 8.75px; padding:9px 20px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14px;line-height: 33px;text-align: left;letter-spacing: 0.1em;color: #444444;}
+.todos_os_produtos .search button{background: #A1E498;border-radius: 0px 8.75px 8.75px 0px;border:0px;min-width: 56px;color:#444444;}
+.todos_os_produtos .search button:hover{background-color: #FFE921; color: #444444;}
+.todos_os_produtos .menuLateral ul{list-style-type: none !important; list-style: none !important;}
+.todos_os_produtos .menuLateral ul li{background-color: transparent; text-transform: uppercase; padding:15px 0px; border-bottom: 0px;font-family: 'Inter';font-style: normal;font-weight: 600;font-size: 18px;line-height: 32px;letter-spacing: 0.2em;color: #1E1E1E;}
+.todos_os_produtos .menuLateral ul li ul{list-style-type: none !important; list-style: none !important;}
+.todos_os_produtos .menuLateral ul li:last-child{border-bottom: 0px;}
+.todos_os_produtos .menuLateral ul li.no-border{border: 0px !important; padding:2px 0px;}
+.todos_os_produtos .menuLateral ul li a{font-family: 'Inter'; text-decoration: none; text-transform: uppercase; font-style: normal;font-weight: 700;font-size: 14px;line-height: 33px;letter-spacing: 0.2em;color: #444444;}
+.todos_os_produtos .menuLateral ul li a:hover, .todos_os_produtos .menuLateral ul li a.active{color:#1F9F41}
+.todos_os_produtos .menuLateral ul li a i{font-size: 24px;}
+.todos_os_produtos .menuLateral .filter-regiao{margin-top: 58px; border-bottom: 0.5px solid #B4B4B4 !important;}
+.todos_os_produtos .menuLateral .filter-faixa-preco{margin-top: 38px; border-bottom: 0.5px solid #B4B4B4 !important;}
+.todos_os_produtos .menuLateral .filter-estado-produto{margin-top: 38px; border-bottom: 0.5px solid #B4B4B4 !important;}
+.todos_os_produtos .menuLateral .filter-categoria{border-bottom: 0.5px solid #B4B4B4 !important; margin-bottom: 15px;}
+.todos_os_produtos .menuLateral .filter-select{background: #fff; border:0px;border-radius: 8.75px 8.75px 8.75px 8.75px; padding:9px 20px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14px;line-height: 33px;text-align: left;letter-spacing: 0.1em;color: #444444;}
+.todos_os_produtos .menuLateral .filter-faixa-preco-ul li{font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;line-height: 33px;text-align: center;letter-spacing: 0.2em;color: #444444;}
+.todos_os_produtos .component_produto{margin-bottom: 40px;}
+.todos_os_produtos .bannertop{height: 209px; margin-bottom: 46px; background: linear-gradient(97.83deg, rgba(37, 152, 67, 0.2) 43.96%, rgba(161, 228, 152, 0) 67.13%), #A1E498;border-radius: 20px;}
+.todos_os_produtos .bannertop2{padding:21px 112px;}
+.todos_os_produtos .bannertop3{height: 209px;}
+.todos_os_produtos .carousel__prev{left:calc(24px + 15px);}
+.todos_os_produtos .carousel__next{right:calc(24px + 15px);}
+.todos_os_produtos .bannertop4{background: #FFE921;border-radius: 5px; padding:7px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 10px;line-height: 19px;text-align: center;color: #1E1E1E;}
+.todos_os_produtos .bannertop5{font-family: 'Inter'; margin-bottom: 0px; margin-top: 5px; font-style: normal;font-weight: 500;font-size: 35px;line-height: 38px;letter-spacing: 0.02em;color: #1E1E1E;}
+.todos_os_produtos .bannertop6{font-family: 'Inter'; margin-bottom: 8px; font-style: normal;font-weight: 300;font-size: 20px;line-height: 38px;letter-spacing: 0.02em;color: #444444;}
+.todos_os_produtos .bannertop7{margin-top: 0px;}
+.todos_os_produtos .bannertop7 .btn{margin-top: 10px;}
+.todos_os_produtos .bannertop_img img{height: 229px; margin-top: -15px;}
+.todos_os_produtos .carousel__prev, .todos_os_produtos .carousel__next{background-color: transparent; border: 2px solid #444444; color:#444444;}
 
+.sobre-nos{background: url(../images/bg_video.jpg), #fff; background-size: 100% 100%; padding: 120px 0px;}
+.sobre-nos .dv1{background: url(../images/video.png), #C4C4C4;border-radius: 30px; overflow: hidden; position: relative; width:100%; height: 420px; background-repeat: no-repeat; background-size: cover;}
+.sobre-nos .dv1 a{display: block; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;}
+.sobre-nos .dv1 a:hover{background-color: rgba(0,0,0,0.4);}
+.sobre-nos h2{font-family: 'Inter'; margin-bottom: 22px; font-style: normal;font-weight: 500;font-size: 35px;line-height: 38px;letter-spacing: 0.02em;color: #1E1E1E;}
+.sobre-nos p{font-family: 'Inter'; margin-bottom: 0px; font-style: normal;font-weight: 300;font-size: 18px;line-height: 130%;letter-spacing: 0.02em;color: #444444;}
 
-footer{padding:100px 0px;}
-footer ul li{font-family: Titillium Web;font-style: normal;font-weight: 600;font-size: 24px;line-height: 37px;color: #33333C; margin-bottom: 30px;}
-footer ul li a{font-family: Titillium Web; text-decoration: none; font-style: normal;font-weight: 600;font-size: 18px;line-height: 27px;color: #85858A; margin-bottom: 30px;}
-footer ul li a:hover{color:var(--amarelo-escuro)}
-footer .redes a{background: rgba(254, 244, 225, 0.5);border-radius: 12px; width:48px; height: 48px; color:#FAA005; text-decoration: none;}
-footer .redes a:hover{background-color: var(--azul); color:#fff;}
-footer .dv123{border-top:1px solid #B0B1B9; margin-top:50px; padding-top:50px;}
-footer .dv123{font-family: Titillium Web;font-style: normal;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: -0.03em;color: #B0B1B9;}
+footer{padding:20px 0px; background-color: #1E1E1E;}
+footer p{font-family: 'Inter'; margin-bottom: 0px; font-style: normal;font-weight: 400;font-size: 14px;line-height: 190%;text-align: center;letter-spacing: 0.15em;color: #FFFFFF;}
 @media (max-width: 768px) {
   #navbarNav{padding: 20px 0px;}
   .navbar-nav .nav-link{text-align: center;}
