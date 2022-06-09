@@ -1,4 +1,5 @@
 const myCarousel = Vue.ref(null);
+import { Fancybox } from "../vendor/vuejs/fancybox.esm.js";
 
 const App = {
 	components: {
@@ -32,6 +33,14 @@ const App = {
                     target: "_blank",
                 },
             ],
+            settings_banners: {
+                itemsToShow: 1,
+                snapAlign: "center",
+                autoplay: 7000,
+                mouseDrag: false,
+                wrapAround: true,
+                touchDrag: false
+            },
             produtos_destaque: [
                 {
                     id: 1,
@@ -75,6 +84,23 @@ const App = {
                     url: "https://www.google.com.br"
                 },
             ],
+            settings_produtos_destaque: {
+				itemsToShow: 1,
+				snapAlign: "center",
+                wrapAround: true,
+                touchDrag: true
+			},
+            breakpoints_produtos_destaque: {
+				// 700px and up
+				700: {
+					itemsToShow: 3.1,
+                    snapAlign: "start",
+                    wrapAround: true,
+                    mouseDrag: false,
+                    wrapAround: true,
+                    touchDrag: false
+				},
+			},
             filter_categorias: [
                 {
                     id: 1,
@@ -213,23 +239,6 @@ const App = {
                     url: "https://www.google.com.br",
                 },
             ],
-			settings_produtos_destaque: {
-				itemsToShow: 3.1,
-				snapAlign: "start",
-                wrapAround: true
-			},
-			breakpoints_produtos_destaque: {
-				// 700px and up
-				700: {
-					itemsToShow: 3.5,
-					snapAlign: "center"
-				},
-				// 1024 and up
-				1024: {
-					itemsToShow: 5,
-					snapAlign: "start"
-				}
-			}
 		};
 	},
     mounted() {

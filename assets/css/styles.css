@@ -68,7 +68,7 @@ body, html{
 .blc_banner del::after{content: ""; position: absolute; left: 0px; top: 50%; right: 0px; height: 2px; background-color: red; transform: rotate(4.49deg);}
 .blc_banner .dv1 ins{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 28px;line-height: 38px;letter-spacing: 0.02em;color: #1E1E1E;text-decoration: none;}
 .blc_banner .dv1 ins span{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 15px;line-height: 28px;letter-spacing: 0.02em;font-feature-settings: 'tnum' on, 'lnum' on;color: #1E1E1E;margin-right: 3px;}
-.blc_banner{position: relative; margin-top: 47px;}
+.blc_banner{position: relative; margin-top: 0px;}
 .blc_banner .vue-carousel__control{background-color: transparent; border: 2px solid #444444;}
 .vue-carousel__control--next:before{border-right-color: #444444 !important;border-top-color: #444444 !important;}
 .vue-carousel__control--prev:before{border-bottom-color: #444444 !important;border-left-color: #444444 !important;}
@@ -128,6 +128,7 @@ body, html{
 .todos_os_produtos .bannertop7 .btn{margin-top: 10px;}
 .todos_os_produtos .bannertop_img img{height: 229px; margin-top: -15px;}
 .todos_os_produtos .carousel__prev, .todos_os_produtos .carousel__next{background-color: transparent; border: 2px solid #444444; color:#444444;}
+.todos_os_produtos .carousel__slide{padding: 0px !important;}
 
 .sobre-nos{background: url(../images/bg_video.jpg), #fff; background-size: 100% 100%; padding: 120px 0px;}
 .sobre-nos .dv1{background: url(../images/video.png), #C4C4C4;border-radius: 30px; overflow: hidden; position: relative; width:100%; height: 420px; background-repeat: no-repeat; background-size: cover;}
@@ -141,6 +142,20 @@ footer p{font-family: 'Inter'; margin-bottom: 0px; font-style: normal;font-weigh
 @media (max-width: 768px) {
   #navbarNav{padding: 20px 0px;}
   .navbar-nav .nav-link{text-align: center;}
+
+  .blc_banner .banner_photo{margin-bottom: 60px;}
+  .blc_banner .dv1 h2{font-size: 25px; line-height: normal; text-align: center;}
+  .blc_banner .dv1 .p1{text-align: center;}
+  .blc_banner .bt_banner_Saiba_mais{max-width: 100%;}
+  .produtoDestak{padding:60px 0px;}
+  .produtoDestak .dv1{text-align: center;}
+  .produtoDestak .dv2{margin-bottom: 30px;}
+  .todos_os_produtos{padding-top: 167px;}
+  .todos_os_produtos .dv1{padding:60px 0px;}
+  .todos_os_produtos .search{margin-bottom: 20px;}
+  .todos_os_produtos .menuLateral .filter-regiao{margin-top: 0px;}
+  .todos_os_produtos .menuLateral .filter-faixa-preco{margin-top: 0px;}
+  .todos_os_produtos .menuLateral .filter-estado-produto{margin-top: 0px;}
 
   footer ul{margin-top: 30px;}
   footer ul li{margin-bottom: 10px; text-align: center;}

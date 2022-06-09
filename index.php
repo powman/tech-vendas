@@ -36,7 +36,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/vue3-carousel@0.1.40/dist/carousel.css" rel="stylesheet">
+  <link href="assets/vendor/vuejs/carousel.css" rel="stylesheet">
+  <link href="assets/vendor/vuejs/fancybox.css" rel="stylesheet">
 
   <!-- Jquery-->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -112,11 +113,11 @@
     <section class="bgBanner">
       <div class="container">
         <div class="blc_banner">
-          <Carousel :touch-drag='false' :mouse-drag='false' :autoplay="7000" :wrap-around="true">
+          <Carousel :settings="settings_banners">
             <Slide v-for="banner in banners" :key="banner.id">
               <div class="item">
-                <div class="row w-100 d-flex align-items-center justify-content-between">
-                    <div class="col-12 col-lg-6">
+                <div class="row w-lg-100 d-flex align-items-center justify-content-between">
+                    <div class="col-12 col-lg-6 order-lg-1 order-2">
                         <div class="dv1">
                             <span v-if="banner.discount" class="dv2">
                                 {{banner.discount}}
@@ -127,7 +128,7 @@
                             <p class="p1">
                               {{banner.description}}
                             </p>
-                            <div class="blc_preco d-flex">
+                            <div class="blc_preco d-flex justify-content-center">
                                 <del v-if="banner.price_regular && banner.price_discount" class="preco_regular d-flex align-items-center">
                                     <span>R$</span> {{banner.price_regular}}
                                 </del>
@@ -143,14 +144,14 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 order-lg-2 order-1 banner_photo">
                         <img alt="" class="img-fluid" :src="banner.photo"/>
                     </div>
                 </div>
               </div>
             </Slide>
             <template #addons>
-              <Navigation />
+              <Navigation class="d-none d-lg-flex" />
             </template>
           </Carousel>
         </div>
@@ -163,7 +164,7 @@
             <h2 class="dv1">
               Produtos em destaque
             </h2>
-            <div class="dv2">
+            <div class="dv2 d-flex justify-content-center d-lg-block">
               <a href="javascript:;" v-on:click="prev_produto_destaque()">
                 <img src="assets/images/left-carrousel.svg" alt="" />
               </a>
@@ -171,14 +172,14 @@
                 <img src="assets/images/right-carrousel.svg" alt="" />
               </a>
             </div>
-            <div class="dv4">
+            <div class="dv4 d-none d-lg-block">
               <a href="produtos.php" class="btn d-flex align-items-center justify-content-between btn bt_green_1">
                 VER TODOS <i class="fal fa-long-arrow-right"></i>
               </a>
             </div>
           </div>
           <div class="col-12 col-lg-9 blc-carrousel-destaque">
-            <carousel :touch-drag='false' :mouse-drag='false' ref="produtos_detaque" :settings='settings_produtos_destaque'>
+            <carousel ref="produtos_detaque" :settings='settings_produtos_destaque' :breakpoints='breakpoints_produtos_destaque'>
               <slide v-for="produto in produtos_destaque" :key="produto.id">
                 <div class="component_produto">
                   <div>
@@ -353,7 +354,7 @@
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-6">
             <div class="dv1">
-              <a class="d-flex justify-content-center align-items-center" href="">
+              <a class="d-flex justify-content-center align-items-center" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=z2X2HaTvkl8">
                 <img alt="" src="assets/images/play-icon.svg"/>
               </a>
             </div>
