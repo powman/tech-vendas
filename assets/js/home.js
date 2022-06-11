@@ -39,7 +39,7 @@ const App = {
                 autoplay: 7000,
                 mouseDrag: false,
                 wrapAround: true,
-                touchDrag: false
+                touchDrag: true
             },
             produtos_destaque: [
                 {
@@ -239,6 +239,13 @@ const App = {
                     url: "https://www.google.com.br",
                 },
             ],
+            settings_banners_produtos_body: {
+				itemsToShow: 1,
+				snapAlign: "center",
+                wrapAround: true,
+                touchDrag: true,
+                mouseDrag: false
+			},
 		};
 	},
     mounted() {

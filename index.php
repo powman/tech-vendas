@@ -128,7 +128,7 @@
                             <p class="p1">
                               {{banner.description}}
                             </p>
-                            <div class="blc_preco d-flex justify-content-center">
+                            <div class="blc_preco d-flex justify-content-center justify-content-lg-start">
                                 <del v-if="banner.price_regular && banner.price_discount" class="preco_regular d-flex align-items-center">
                                     <span>R$</span> {{banner.price_regular}}
                                 </del>
@@ -273,7 +273,7 @@
             </div>
             <div class="col-12 col-lg-9">
               <div class="bannertop">
-                <carousel class="bannertop3" :touch-drag='false' :mouse-drag='false' ref="banners_todos_os_produtos">
+                <carousel class="bannertop3" :settings="settings_banners_produtos_body" ref="banners_todos_os_produtos">
                   <slide v-for="banner in banners_produtos_body" :key="banner.id">
                     <div class="bannertop2 w-100 h-100">
                       <div class="row">
@@ -287,7 +287,7 @@
                           <p class="bannertop6">
                             {{banner.description}}
                           </p>
-                          <div class="bannertop7">
+                          <div class="bannertop7 d-none d-lg-block">
                             <a :href="banner.url" class="btn d-flex align-items-center justify-content-between btn bt_green_3">
                               VER MAIS DETALHES <i class="fal fa-long-arrow-right"></i>
                             </a>
@@ -352,14 +352,14 @@
     <section class="sobre-nos">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6 order-lg-1 order-2">
             <div class="dv1">
               <a class="d-flex justify-content-center align-items-center" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=z2X2HaTvkl8">
                 <img alt="" src="assets/images/play-icon.svg"/>
               </a>
             </div>
           </div>
-          <div class="col-12 offset-lg-1 col-lg-5">
+          <div class="col-12 order-lg-2 order-1 col-lg-5">
             <h2>
               Um pouco sobre nós
             </h2>
