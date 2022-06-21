@@ -10,99 +10,7 @@ const App = {
 	},
 	setup() {
 		return {
-            banners: [
-                {
-                    id: 1,
-                    title: "iPhone 13 Grafite 256gb",
-                    photo: "assets/images/iphone13.png",
-                    discount: "17% OFF",
-                    description: "Tela 6.1, câmera dupla de 12MP",
-                    price_regular: "7.500,00",
-                    url: "produto.php",
-                    target: "_blank",
-                },
-                {
-                    id: 2,
-                    title: "iPhone 14 Grafite 256gb",
-                    photo: "assets/images/iphone13.png",
-                    discount: "1% OFF",
-                    description: "Tela 7.1, câmera dupla de 12MP",
-                    price_regular: "78.500,00",
-                    price_discount: "50.500,00",
-                    url: "produto.php",
-                    target: "_blank",
-                },
-            ],
-            settings_banners: {
-                itemsToShow: 1,
-                snapAlign: "center",
-                autoplay: 7000,
-                mouseDrag: false,
-                wrapAround: false,
-                touchDrag: true
-            },
-            produtos_destaque: [
-                {
-                    id: 1,
-                    title: "Mini drone DJI Mavic Mini 2 DRDJI017",
-                    photo: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HM9Q2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1534191258296",
-                    description: "Single com câmera 4K light gray DRDJI017 ",
-                    price_regular: "7.500,00",
-                    price_discount: "5.500,00",
-                    url: "produto.php",
-                    disabled: true
-                },
-                {
-                    id: 2,
-                    title: "Mini drone DJI Mavic Mini 2 DRDJI017",
-                    photo: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HM9Q2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1534191258296",
-                    description: "Single com câmera 4K light gray DRDJI017 ",
-                    price_regular: "7.500,00",
-                    url: "produto.php"
-                },
-                {
-                    id: 3,
-                    title: "Mini drone DJI Mavic Mini 2 DRDJI017",
-                    photo: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HM9Q2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1534191258296",
-                    description: "Single com câmera 4K light gray DRDJI017 ",
-                    price_regular: "7.500,00",
-                    url: "produto.php"
-                },
-                {
-                    id: 4,
-                    title: "Mini drone DJI Mavic Mini 2 DRDJI017",
-                    photo: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HM9Q2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1534191258296",
-                    description: "Single com câmera 4K light gray DRDJI017 ",
-                    price_regular: "7.500,00",
-                    url: "produto.php"
-                },
-                {
-                    id: 5,
-                    title: "Mini drone DJI Mavic Mini 2 DRDJI017",
-                    photo: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HM9Q2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1534191258296",
-                    description: "Single com câmera 4K light gray DRDJI017 ",
-                    price_regular: "7.500,00",
-                    url: "produto.php"
-                },
-            ],
-            settings_produtos_destaque: {
-				itemsToShow: 1,
-				snapAlign: "center",
-                wrapAround: false,
-                touchDrag: true
-			},
-            breakpoints_produtos_destaque: {
-				// 700px and up
-				700: {
-					itemsToShow: 3.1,
-                    snapAlign: "start",
-                    wrapAround: true,
-                    mouseDrag: false,
-                    wrapAround: false,
-                    touchDrag: false
-				},
-			},
-            filter_categorias: [
+            filter_categorias_produtos: [
                 {
                     id: 1,
                     title: "Smartphones",
@@ -129,7 +37,7 @@ const App = {
                     url: "https://www.google.com.br"
                 },
             ],
-            filter_regiao: [
+            filter_regiao_produtos: [
                 {
                     id: 1,
                     title: "Goiânia"
@@ -147,7 +55,7 @@ const App = {
                     title: "Senador Canedo"
                 }
             ],
-            filter_price: [
+            filter_price_produtos: [
                 {
                     id: 1,
                     title: "ATÉ R$800,00"
@@ -161,7 +69,7 @@ const App = {
                     title: "R$1.500,01 - R$2.500,00"
                 }
             ],
-            filter_estado_produto: [
+            filter_estado_produto_produtos: [
                 {
                     id: 1,
                     title: "Produto novo"
@@ -171,7 +79,7 @@ const App = {
                     title: "Produto usado"
                 }
             ],
-            produtos_home: [
+            produtos_list: [
                 {
                     id: 1,
                     title: "Mini drone DJI Mavic Mini 2 DRDJI017",
@@ -223,7 +131,7 @@ const App = {
                     url: "produto.php"
                 },
             ],
-            banners_produtos_body: [
+            banners_produtos_body_produtos: [
                 {
                     id: 1,
                     title: "Apple Watch Series 7",
@@ -241,7 +149,7 @@ const App = {
                     url: "produto.php",
                 },
             ],
-            settings_banners_produtos_body: {
+            settings_banners_produtos_body_produtos: {
 				itemsToShow: 1,
 				snapAlign: "center",
                 wrapAround: false,
@@ -267,7 +175,7 @@ const App = {
     }
 };
 
-Vue.createApp(App).mount("#app");
+Vue.createApp(App).mount("#produtosList");
 
 /*import { createApp } from 'vue'
 import VueCarousel from '@chenfengyuan/vue-carousel'

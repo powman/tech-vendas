@@ -15,7 +15,14 @@
   outline-color: transparent;
   outline-style: none;
   outline: 0 !important;
+  box-shadow: none !important;
   transition: all 0.35s ease-in-out;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 40px #F7F7F7 inset !important;
 }
 body, html{
   background-color: #F5F5F5;
@@ -41,7 +48,7 @@ body, html{
 .bt_green_3:hover{background-color: var(--black); color: #fff;border-color: var(--black);}
 .bt_green_3:hover i{color: #fff; }
 
-.component_produto{background: #FFFFFF;box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);border-radius: 30px;padding:12px;width:100%;padding-bottom: 25px;}
+.component_produto{position: relative; background: #FFFFFF;box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);border-radius: 30px;padding:12px;width:100%;padding-bottom: 25px;}
 .component_produto .img{width: 100%; display: block; height: 200px; object-fit: cover; border-radius: 20px;background-blend-mode: multiply, normal; background-size: cover !important;background-position: center center !important; background-repeat: no-repeat !important;} 
 .component_produto .dc0{padding:0px 13px;}
 .component_produto .dc11{font-family: 'Inter' !important; text-align: justify; font-style: normal !important;font-weight: 600 !important;font-size: 20px !important;line-height: 130% !important;letter-spacing: 0.02em;color: #1E1E1E !important;margin-bottom: 0px; text-align: justify;margin-top: 23px;margin-bottom: 20px;}
@@ -54,6 +61,8 @@ body, html{
 .component_produto ins span{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 15px;line-height: 28px;letter-spacing: 0.02em;font-feature-settings: 'tnum' on, 'lnum' on;color: #1E1E1E;margin-right: 3px;}
 .component_produto .dc23{margin-top: 23px;}
 .component_produto .bt_green_1{padding:4px 20px;margin-top: 0px;}
+.component_produto .disabled_produto{background:rgba(255,255,255,0.6); border-radius: 30px; position: absolute; top: 12px; right: 12px; bottom: 12px; left: 12px;}
+.component_produto .disabled_produto .redbg{background: rgba(223, 0, 67, 0.86);border-radius: 10.0873px;margin:0px;padding:15px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 20.1745px;line-height: 24px;text-align: center;color: #FFFFFF;}
 
 .bgBanner{background:url(../images/bg_banner.png) no-repeat center center; min-height: 600px; background-size: 100% 100%;}
 .blc_banner{min-height: 600px; position: relative;}
@@ -94,6 +103,18 @@ body, html{
 .produtoDestak .carousel__item {min-height: 200px;width: 100%;display: flex;justify-content: center;align-items: center;}
 .produtoDestak .carousel__slide {padding: 10px;}
 
+.modal-header{background: #1E1E1E; padding:56px 80px;}
+.modal-content{border-radius: 30px;}
+.modal-title{font-family: 'Inter'; margin-bottom: 15px; font-style: normal;font-weight: 500;font-size: 35px;line-height: 38px;text-align: center;letter-spacing: 0.02em;color: #FFFFFF; text-align: center;}
+.modal-dialog{max-width: 540px;}
+.modal-subtitle{font-family: 'Inter'; margin-bottom: 0px; font-style: normal;font-weight: 300;font-size: 18px;line-height: 130%;text-align: center;letter-spacing: 0.02em;color: #DBDBDB;}
+.modal-body{padding:34px 40px;}
+.modal form input{background: #F7F7F7;border-radius: 8.75px;border:0px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14px;line-height: 33px;letter-spacing: 0.1em;color: #444444;}
+.modal form input:focus{background: #F7F7F7;}
+.modal form label{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14px;letter-spacing: 0.1em;color: #444444;}
+.modal form button{min-width: 322px;}
+.modal .esqueci_senha, .modal .ja_tenho_conta{font-family: 'Inter'; display: block; text-decoration: none; margin: 0 auto; margin-top: 22px; font-style: normal;font-weight: 300;font-size: 15px;line-height: 130%;text-align: center;letter-spacing: 0.05em;color: #444444;}
+.modal .esqueci_senha:hover, .modal .ja_tenho_conta:hover{color:#A1E498;}
 
 .todos_os_produtos{background-color: #fff; padding: 187px 0px 0px 0px;}
 .todos_os_produtos .dv1{padding: 100px 0px; background-color: #F5F5F5;}

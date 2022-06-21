@@ -1,0 +1,6 @@
+#produtosList .todos_os_produtos{padding-top: 0px;}
+#produtosList .todos_os_produtos .dv1{padding-bottom: 60px;}
+
+@media (max-width: 768px) {
+    #produtosList .todos_os_produtos .dv1{padding-bottom: 0px;}
+}
