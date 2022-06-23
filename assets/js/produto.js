@@ -15,6 +15,24 @@ const App = {
     },
 	setup() {
 		return {
+            title:"Mini drone DJI Mavic Mini 2 DRDJI017",
+            description:`
+                arius mi phasellus elementum felis sit. Sit felis viverra sagittis tellus et mattis etiam.<br/><br/>
+
+                Pharetra morbi aliquam vel aliquam varius. Habitasse phasellus dictum aliquam a.<br/><br/>
+
+                Pulvinar vestibulum at nunc neque fringilla.
+            `,
+            priceDiscount:"6.725,00",
+            price: "5.725,00",
+            qtdes:[
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
             thumbnails: [
                 {
                     id: 1,
@@ -50,6 +68,9 @@ const App = {
     methods: {
         replacePhotoDetach: (url) => {
             this.photo_detach = url;
+        },
+        whatsappSend: (url) => {
+            window.location.href="https://wa.me/5562985653255?text=texto aqui";
         }
     }
 };
