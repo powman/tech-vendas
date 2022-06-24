@@ -251,8 +251,7 @@ const App = {
 		};
 	},
     mounted() {
-        // this.$refs.child will hold an instance of <Child />
-        console.log(this.$refs);
+
     },
     methods: {
         next_produto_destaque() {

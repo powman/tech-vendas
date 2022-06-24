@@ -58,6 +58,11 @@ body, html{
 .bt_comprar:hover{background-color: #fff; color: var(--black);}
 .bt_comprar:hover i{color: var(--black); }
 
+.bt_white{padding:9px 20px; background: #fff;border-color:#fff;border-radius: 8.75px; font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;line-height: 33px;text-align: center;letter-spacing: 0.2em;color: #1E1E1E;}
+.bt_white i{font-size: 28px;}
+.bt_white:hover{background-color: #1E1E1E; color: #fff; border-color: #1E1E1E;}
+.bt_white:hover i{color: #fff; }
+
 .component_produto{position: relative; background: #FFFFFF;box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);border-radius: 30px;padding:12px;width:100%;padding-bottom: 25px;}
 .component_produto .img{width: 100%; display: block; height: 200px; object-fit: cover; border-radius: 20px;background-blend-mode: multiply, normal; background-size: cover !important;background-position: center center !important; background-repeat: no-repeat !important;} 
 .component_produto .dc0{padding:0px 13px;}
