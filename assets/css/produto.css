@@ -38,6 +38,17 @@
 #bodyRelac .titlep{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 35px;line-height: 38px;text-align: center;letter-spacing: 0.02em;color: #1E1E1E; max-width: 503px; margin: 0 auto;}
 #bodyRelac .bodyRelac1{margin-top: 66px;}
 #bodyRelac .bodyRelac1_1{margin-top: 30px;}
+#formInteresseProduto{background: #EBEBEB; padding:38px 0px; position: fixed; bottom: 0px; left: 0px; right: 0px; z-index: 2;}
+#formInteresseProduto h2{font-family: 'Inter'; margin-bottom: 0px; font-style: normal;font-weight: 500;font-size: 30px;line-height: 38px;letter-spacing: 0.02em;color: #1E1E1E;}
+#formInteresseProduto input{background: #FFFFFF;border-radius: 8.75px;border:0px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14px;line-height: 33px;letter-spacing: 0.1em;color: #444444;}
+#formInteresseProduto label{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14px;letter-spacing: 0.1em;color: #444444;}
+#formInteresseProduto .bt_comprar{padding:11px 20px;}
+
+#formFeedbackProduto{background: #EBEBEB; padding:38px 0px; position: fixed; bottom: 0px; left: 0px; right: 0px; z-index: 2;}
+#formFeedbackProduto .circlelk i{font-size: 49px; color:#21A33E;}
+#formFeedbackProduto h2{font-family: 'Inter'; margin-bottom: 0px; font-style: normal;font-weight: 500;font-size: 30px;line-height: 38px;letter-spacing: 0.02em;color: #1E1E1E;}
+
+.bgForm{position: fixed; top:0px; left:0px; bottom: 0px; right: 0px; background-color: rgba(0,0,0,0.3); z-index: 1;}
 @media (max-width: 768px) {
     #produtoSingle{margin-top: 30px;}
     #produtoSingle .prod1{text-align: center; font-size: 25px; line-height: normal;}

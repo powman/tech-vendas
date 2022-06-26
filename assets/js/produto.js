@@ -10,6 +10,9 @@ const App = {
 	},
     data() {
         return {
+            nome:"",
+            email:"",
+            whatsapp:"",
             photo_detach:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HM9Q2?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1534191258296"
         }
     },
@@ -156,19 +159,42 @@ const App = {
 		};
 	},
     methods: {
-        replacePhotoDetach: (url) => {
-            this.photo_detach = url;
-        },
         whatsappSend: (url) => {
             window.location.href="https://wa.me/5562985653255?text=texto aqui";
         },
-        next_produto_relacionados() {
-            this.$refs.produtos_relacionados.next();
+        formSend: () => {
+            if(!$("#nome").val()) {
+                alert("Preencher o campo nome!");
+                $("#nome").focus();
+                return;
+            }
+            if(!$("#email").val()) {
+                alert("Preencher o campo e-mail!");
+                $("#email").focus();
+                return;
+            }
+            if(!$("#whatsapp").val()) {
+                alert("Preencher o campo whatsapp!");
+                $("#whatsapp").focus();
+                return;
+            }
+            $("#formInteresseProduto").hide();
+            $("#formFeedbackProduto").slideDown();
+            // Fazer o envio aqui
         },
-        prev_produto_relacionados() {
-            this.$refs.produtos_relacionados.prev();
+        btnComprar() {
+          $("#formInteresseProduto").slideDown();
+          $(".bgForm").fadeIn();
         },
     }
 };
 
 Vue.createApp(App).mount("#produtoSingle");
+
+$( document ).ready(function() {
+    $(".bgForm, #btnOk").click(function(){
+        $("#formInteresseProduto").slideUp();
+        $("#formFeedbackProduto").slideUp();
+        $(".bgForm").fadeOut();
+    });
+});

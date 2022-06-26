@@ -52,7 +52,7 @@
               </a>
              </div>
              <div>
-              <a href="produtos.php" class="btn d-flex align-items-center justify-content-between btn bt_comprar">
+              <a href="javascript:;" @click="btnComprar" class="btn d-flex align-items-center justify-content-between btn bt_comprar">
                 COMPRAR AGORA <i class="fal fa-long-arrow-right"></i>
               </a>
              </div>
@@ -158,5 +158,63 @@
         </div>
       </div>
     </section>
+    <section id="formInteresseProduto" style="display: none;">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-lg-3">
+            <h2>
+              Tenho interesse<br/>neste produto
+            </h2>
+          </div>
+          <div class="col-12 col-lg-9">
+            <form>
+              <div class="row">
+                <div class="col-6 col-lg-3">
+                  <div class="form-floating mb-0">
+                    <input v-model="nome" type="text" class="form-control" id="nome" placeholder=" ">
+                    <label for="nome">Meu nome é:</label>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="form-floating mb-0">
+                    <input v-model="email" type="email" class="form-control" id="email" placeholder=" ">
+                    <label for="email">Meu e-mail é:</label>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="form-floating mb-0">
+                    <input v-model="whatsapp" type="tel" class="form-control" id="whatsapp" placeholder=" ">
+                    <label for="whatsapp">Meu whatsapp:</label>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <a href="javascript:;" @click="formSend" class="btn mt-0 d-flex align-items-center justify-content-between btn bt_comprar">
+                    ENVIAR <i class="fal fa-long-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="formFeedbackProduto" style="display: none;">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-lg-1 circlelk">
+            <i class="fal fa-check-circle"></i>
+          </div>
+          <div class="col-12 col-lg-9">
+            <h2>Recebemos seus dados e entraremos em contato.</h2>
+          </div>
+          <div class="col-12 col-lg-2">
+            <a href="javascript:;" id="btnOk" class="btn d-flex align-items-center justify-content-between btn bt_comprar mt-0">
+              OK <i class="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bgForm" style="display: none;"></div>
 </div>
 <?php include 'footer.php'; ?>
