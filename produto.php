@@ -169,25 +169,25 @@
           <div class="col-12 col-lg-9">
             <form>
               <div class="row">
-                <div class="col-6 col-lg-3">
+                <div class="col-12 col-lg-3">
                   <div class="form-floating mb-0">
                     <input v-model="nome" type="text" class="form-control" id="nome" placeholder=" ">
                     <label for="nome">Meu nome é:</label>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-12 col-lg-3">
                   <div class="form-floating mb-0">
                     <input v-model="email" type="email" class="form-control" id="email" placeholder=" ">
                     <label for="email">Meu e-mail é:</label>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-12 col-lg-3">
                   <div class="form-floating mb-0">
                     <input v-model="whatsapp" type="tel" class="form-control" id="whatsapp" placeholder=" ">
                     <label for="whatsapp">Meu whatsapp:</label>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-12 col-lg-3">
                   <a href="javascript:;" @click="formSend" class="btn mt-0 d-flex align-items-center justify-content-between btn bt_comprar">
                     ENVIAR <i class="fal fa-long-arrow-right"></i>
                   </a>
