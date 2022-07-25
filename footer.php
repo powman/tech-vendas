@@ -14,6 +14,9 @@
   <script type="module" src="assets/js/home.js"></script>
   <script type="module" src="assets/js/produtos.js"></script>
   <script type="module" src="assets/js/produto.js"></script>
+  <script type="module" src="assets/js/conta-produtos.js"></script>
+  <script type="module" src="assets/js/conta-pedidos.js"></script>
+  <script type="module" src="assets/js/conta-pedidos-detalhes.js"></script>
   <div id="modalCreateAccount" class="modal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
@@ -70,7 +73,7 @@
           </p>
         </div>
         <div class="modal-body">
-          <form autocomplete="off">
+          <form action="conta-produtos.php" autocomplete="off">
             <div class="form-floating mb-3">
               <input autocomplete="off" type="email" class="form-control" id="floatingInput" placeholder=" ">
               <label for="floatingInput">Qual é o seu email?</label>

@@ -1,0 +1,16 @@
+#contaPedidosDetalhes .todos_os_produtos{padding-top: 0px;}
+#contaPedidosDetalhes .todos_os_produtos .dv1{padding-bottom: 60px;}
+.cped1{border-bottom: 1px solid #EBEBEB; border-right: 0px; height: 60px;}
+.accordion-button::after{display: none;}
+#contaPedidosDetalhes .img{width: 100%; display: block; height: 63px; object-fit: cover;border-radius: 4.14773px;background-blend-mode: multiply, normal; background-size: cover !important;background-position: center center !important; background-repeat: no-repeat !important;} 
+.cpd1{font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 18px;line-height: 130%;letter-spacing: 0.02em;color: #444444; margin-bottom: 20px;}
+
+#formUpdate input{background: #F7F7F7;border-radius: 8.75px;border:0px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14px;line-height: 33px;letter-spacing: 0.1em;color: #444444;}
+#formUpdate input:focus{background-color: #F7F7F7;}
+#formUpdate label{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14px;letter-spacing: 0.1em;color: #444444;}
+.cped8{border-top: 1px solid #EBEBEB; margin-top: 51px; padding:30px 0px;}
+@media (max-width: 768px) {
+    #contaPedidosDetalhes .img{height: 200px; margin-bottom: 15px;}
+    #formUpdate input{margin-bottom: 15px;}
+    .cped8{margin-top: 0px;}
+}

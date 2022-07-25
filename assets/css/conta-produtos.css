@@ -1,0 +1,25 @@
+#contaProdutos .todos_os_produtos{padding-top: 0px;}
+#contaProdutos .todos_os_produtos .dv1{padding-bottom: 60px;}
+.menuLateral .dv2{background: #FFFFFF;border-radius: 10px; padding:20px;}
+.todos_os_produtos .menuLateral ul li a{font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;line-height: 33px;text-align: center;letter-spacing: 0.2em;color: #444444;}
+.todos_os_produtos .menuLateral ul li a i{margin-right: 10px;}
+.todos_os_produtos .menuLateral ul li{padding:15px 0px;}
+.bt_green_1{max-width: 100% !important;}
+.todos_os_produtos .search{margin-bottom: 20px;}
+.cpprod1{background: #FFFFFF;border-radius: 10px; margin-bottom: 20px;}
+.cpprod1:last-child{margin-bottom: 0px;}
+.cpprod2{margin:15px;}
+.cpprod2 .img{width: 100%; display: block; height: 200px; object-fit: cover; border-radius: 20px;background-blend-mode: multiply, normal; background-size: cover !important;background-position: center center !important; background-repeat: no-repeat !important;} 
+.cpprod3{font-family: 'Inter';font-style: normal;font-weight: 600;font-size: 30px;line-height: 130%;letter-spacing: 0.02em;color: #1E1E1E; margin-bottom: 16px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;}
+.cpprod4{font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 18px;line-height: 130%;letter-spacing: 0.02em;color: #444444; margin-bottom: 0px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;}
+.cpprod3_{padding:15px 0px;}
+.cpprod5{border-left: 2px solid #ccc; min-height: 134px;}
+.itemAcao a{vertical-align: middle; font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;line-height: 33px;text-align: center;letter-spacing: 0.2em;color: #444444; text-decoration: none;}
+.itemAcao a i{font-size: 18px; vertical-align: -1px;}
+.itemAcao a i.deletar{color: #FF0000;}
+
+@media (max-width: 768px) {
+    .todos_os_produtos .search{margin-top: 30px; margin-bottom: 10px;}
+    .cpprod3_{padding:15px;}
+    .cpprod5{padding:15px; border:0px; min-height: auto;}
+}

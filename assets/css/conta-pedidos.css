@@ -1,0 +1,23 @@
+#contaPedidos .todos_os_produtos{padding-top: 0px;}
+#contaPedidos .todos_os_produtos .dv1{padding-bottom: 60px;}
+.accordion-button, .accordion-button:focus{background-color: #fff !important; padding:0px 25px; border-bottom: 1px solid #EBEBEB;}
+.accordion-button.collapsed{border: 0px !important; border-color: transparent !important; }
+.accordion-item{border: 0px; margin-bottom: 20px; border-radius: 10px !important; overflow: hidden;}
+.cped1{border-right: 1px solid #EBEBEB; height: 90px; font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 18px;line-height: 130%;letter-spacing: 0.02em;color: #444444;}
+.cped2{font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 10px;line-height: 130%;letter-spacing: 0.02em;text-transform: uppercase;color: #444444; margin-bottom: 3px;}
+.cped3{font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 18px;line-height: 130%;letter-spacing: 0.02em;color: #1E1E1E; margin-bottom: 0px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1; line-clamp: 1; -webkit-box-orient: vertical;}
+.cped4{border-left: 1px solid #EBEBEB; height: 90px; font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 16px;line-height: 130%;letter-spacing: 0.05em;text-transform: uppercase;color: #21A33E;}
+.accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+.accordion-button::after {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+#contaPedidos .img{width: 100%; display: block; height: 63px; object-fit: cover;border-radius: 4.14773px;background-blend-mode: multiply, normal; background-size: cover !important;background-position: center center !important; background-repeat: no-repeat !important;} 
+.list-group-item{padding:0px; border:0px; margin-bottom: 15px;}
+.cped5{font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 14px;line-height: 130%;letter-spacing: 0.02em;color: #444444; margin-bottom: 3px;}
+.cped6{font-family: 'Inter';font-style: normal;font-weight: 600;font-size: 20px;line-height: 130%;letter-spacing: 0.02em;color: #1E1E1E; margin-bottom: 0px; padding-right: 15px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1; line-clamp: 1; -webkit-box-orient: vertical;}
+.cped6_{border-right:1px solid #EBEBEB;}
+.cped7{border-top: 1px solid #EBEBEB; padding:30px 0px 10px 0px;}
+@media (max-width: 768px) {
+    .cped1, .cped4{border: 0px;}
+    #contaPedidos .img{height: 200px; margin-bottom: 15px;}
+    .cped6_, .kfjalkfas{border:0px; margin-bottom: 5px;}
+    .cped7 a{width: 100%;}
+}
