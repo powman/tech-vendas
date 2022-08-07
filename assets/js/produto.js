@@ -8,16 +8,14 @@ const App = {
 		Navigation: VueCarousel.Navigation,
 		Slide: VueCarousel.Slide
 	},
-    data() {
-        return {
+	data() {
+		return {
             nome:"",
             email:"",
             whatsapp:"",
-            photo_detach:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HM9Q2?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1534191258296"
-        }
-    },
-	setup() {
-		return {
+            photo_detach:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HM9Q2?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1534191258296",
+
+
             title:"Mini drone DJI Mavic Mini 2 DRDJI017",
             description:`
                 arius mi phasellus elementum felis sit. Sit felis viverra sagittis tellus et mattis etiam.<br/><br/>

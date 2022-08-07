@@ -50,7 +50,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                  <a href="produto.url" class="btn d-flex align-items-center w-100 mt-0 justify-content-between btn bt_green_1">
+                  <a href="conta-addprodutos.php" class="btn d-flex align-items-center w-100 mt-0 justify-content-between btn bt_green_1">
                     ADICIONAR PRODUTO <i class="fal fa-long-arrow-right"></i>
                   </a>
                 </div>

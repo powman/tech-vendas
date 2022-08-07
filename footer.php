@@ -19,6 +19,7 @@
   <script type="module" src="assets/js/conta-pedidos-detalhes.js"></script>
   <script type="module" src="assets/js/conta-meusdados.js"></script>
   <script type="module" src="assets/js/conta-alterarsenha.js"></script>
+  <script type="module" src="assets/js/conta-addprodutos.js"></script>
   <div id="modalCreateAccount" class="modal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">

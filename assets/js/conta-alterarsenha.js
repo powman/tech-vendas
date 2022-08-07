@@ -8,7 +8,7 @@ const App = {
 		Navigation: VueCarousel.Navigation,
 		Slide: VueCarousel.Slide
 	},
-	setup() {
+	data() {
 		return {
             dados:{
                 senhaatual: "",

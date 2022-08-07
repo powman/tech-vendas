@@ -1,0 +1,13 @@
+
+#contaAddProdutos .todos_os_produtos{padding-top: 0px;}
+#contaAddProdutos .todos_os_produtos .dv1{padding-bottom: 60px;}
+.cped1{border:0px; height: auto; padding-top:30px; font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 18px;line-height: 130%;letter-spacing: 0.02em;color: #444444;}
+#formUpdate textarea{background: #F7F7F7;border-radius: 8.75px;border:0px; font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 14px;line-height: 33px;letter-spacing: 0.1em;color: #444444; height: 129px; resize: none;}
+#formUpdate textarea:focus{background-color: #F7F7F7;}
+.cped7sub {border-top: 1px solid #EBEBEB;padding: 20px 0px 10px 0px; margin-top:20px;}
+.btnMais{background: #F7F7F7;border-radius: 8.75px; height: 55px; width:55px; color: #21A33E;}
+.btnMais i{font-size: 25px;}
+.redBtn{color:red;}
+@media (max-width: 768px) {
+    #contaAddProdutos .img{height: 200px; margin-bottom: 15px;}
+}
