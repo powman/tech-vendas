@@ -37,6 +37,8 @@
   <link href="assets/css/conta-produtos.css" rel="stylesheet">
   <link href="assets/css/conta-pedidos.css" rel="stylesheet">
   <link href="assets/css/conta-pedidos-detalhes.css" rel="stylesheet">
+  <link href="assets/css/conta-meusdados.css" rel="stylesheet">
+  <link href="assets/css/conta-alterarsenha.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

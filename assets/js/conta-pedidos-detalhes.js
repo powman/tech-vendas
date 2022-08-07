@@ -40,13 +40,13 @@ const App = {
 		};
 	},
     mounted() {
-        // this.$refs.child will hold an instance of <Child />
-        console.log(this.$refs);
+
     },
     methods: {
-        deletar(id, index) {
-            console.log(id, index);
-            alert("Implementar o deletar aqui");
+        handleSubmit(e) {
+            e.preventDefault();
+            console.log(this.pedido);
+            alert('Validar o formulario aqui');
         },
         maskTelefone (v) {
             const self = this;

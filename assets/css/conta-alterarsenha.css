@@ -1,0 +1,7 @@
+
+#contaAlterarSenha .todos_os_produtos{padding-top: 0px;}
+#contaAlterarSenha .todos_os_produtos .dv1{padding-bottom: 60px;}
+.cped1{border:0px; height: auto; padding-top:30px; font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 18px;line-height: 130%;letter-spacing: 0.02em;color: #444444;}
+@media (max-width: 768px) {
+    #contaAlterarSenha .img{height: 200px; margin-bottom: 15px;}
+}
